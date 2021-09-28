@@ -1,6 +1,7 @@
 import { useState } from "react";
 import "./styles.css";
 
+// main list
 const places = {
   Rajasthan: [
     { cityName: "Udaipur", spaciality: "The city of lakes" },
@@ -22,6 +23,7 @@ const places = {
 };
 
 export default function App() {
+  // function for set state
   const [selectState, setState] = useState("Rajasthan");
   function stateClickHandler(state) {
     setState(state);
@@ -43,6 +45,7 @@ export default function App() {
         here is must visit places
       </p>
       <div>
+        {/* list of states */}
         {Object.keys(places).map((state) => (
           <button
             onClick={() => stateClickHandler(state)}
@@ -66,6 +69,7 @@ export default function App() {
           borderRadius: "20px"
         }}
       >
+        {/* list of all city/places */}
         <ul style={{ paddingInlineStart: "0" }}>
           {places[selectState].map((state) => (
             <li
