@@ -95,8 +95,8 @@ export default function App() {
       </div>
       {/* footer */}
 
-      <footer style={{ marginTop: "200px", padding: "12px" }}>
-        Made By Harshit Paliwal
+      <footer style={{ marginTop: "100px", padding: "12px" }}>
+        <h1>Made By Harshit Paliwal</h1>
       </footer>
 
       {/* links for stay connected */}
